@@ -2,12 +2,6 @@
   "addons": [
     "heroku-postgresql"
   ],
-  "buildpacks": [
-    {
-      "url": "heroku/ruby",
-      "url": "https://github.com/DuckyTeam/heroku-buildpack-imagemagick.git"
-    }
-  ],
   "env": {
   },
   "formation": {
@@ -15,7 +9,7 @@
       "quantity": 1
     }
   },
-  "name": "ballistix",
+  "name": "vrg-online",
   "scripts": {
   },
   "stack": "heroku-18"

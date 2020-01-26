@@ -40,7 +40,7 @@ body {
     height: calc(100vh - #{$nav-height});
   }
   &--hero {
-    @include background-to-color("../images/backgrounds/local-coffee-shop.jpg", transparent, $gray-900, 0.5, 1);
+    @include background-to-color("../images/backgrounds/local-barber.jpg", transparent, $gray-900, 0.5, 1);
     height: 35rem;
     background-position: center;
     background-size: cover;

@@ -1,0 +1,16 @@
+ul,
+ol {
+  @apply m-0 p-0 list-none;
+}
+
+dl {
+  @apply mb-3;
+
+  dt {
+    @apply font-bold mt-3;
+  }
+
+  dd {
+    @apply m-0;
+  }
+}

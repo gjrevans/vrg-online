@@ -1,0 +1,35 @@
+<section class="l-section l-section--dark l-section--lg" id="footer">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-4">
+				<p class="small text-uppercase">VRG Interactive</p>
+				<ul class="list-unstyled">
+					<li><a href="#whatwedo">What We Do</a></li>
+					<li><a href="#aboutus">About Us</a></li>
+					<li><a href="#ourwork">Our Work</a></li>
+					<li><a href="#contact">Contact us</a></li>
+				</ul>
+			</div>
+			<div class="col-md-4">
+				<p class="small text-uppercase">Location</p>
+				<p class="text-muted">
+					520 - 720 King Street West<br />
+					Toronto Ontario<br />
+					Canada
+				</p>
+			</div>
+			<div class="col-md-4">
+				<p class="small text-uppercase">Contact</p>
+        <ul class="list-unstyled">
+          <li><%= mail_to "hello@vrginteractive.com", "hello@vrginteractive.com" %></li>
+          <% if user_signed_in? %>
+            <li><%= link_to t('navigation.logout'), destroy_user_session_path, method: :delete %></li>
+          <% else %>
+            <li><%= link_to t('navigation.sign_in'), new_user_session_path %></li>
+          <% end %>
+        </ul>
+
+			</div>
+		</div>
+	</div>
+</section>

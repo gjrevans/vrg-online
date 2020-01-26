@@ -1,0 +1,94 @@
+fieldset {
+  background-color: transparent;
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+legend {
+  @apply font-bold m-0 p-0;
+}
+
+label {
+  @apply font-bold m-0 block;
+}
+
+input,
+select {
+  @apply block;
+}
+
+input,
+select,
+textarea {
+  @apply block;
+}
+
+[type="color"],
+[type="date"],
+[type="datetime-local"],
+[type="email"],
+[type="month"],
+[type="number"],
+[type="password"],
+[type="search"],
+[type="tel"],
+[type="text"],
+[type="time"],
+[type="url"],
+[type="week"],
+input:not([type]),
+textarea {
+  @apply border rounded;
+  appearance: none;
+  background-color: $white;
+  padding: 0.5em;
+  width: 100%;
+  &:hover {
+    @apply border-gray-400;
+  }
+  &:focus {
+    @apply border-primary;
+    outline: none;
+  }
+
+  &:disabled {
+    @apply bg-gray-100;
+    cursor: not-allowed;
+
+    &:hover {
+      @apply border border-primary;
+    }
+  }
+
+  &::placeholder {
+    font-style: italic;
+  }
+}
+
+textarea {
+  resize: vertical;
+}
+
+[type="checkbox"],
+[type="radio"] {
+  @apply mr-3 inline;
+}
+
+[type="file"] {
+  width: 100%;
+}
+
+select {
+  width: 100%;
+}
+
+[type="checkbox"],
+[type="radio"],
+[type="file"],
+select {
+  &:focus {
+    outline: $focus-outline;
+    outline-offset: $focus-outline-offset;
+  }
+}

@@ -1,0 +1,74 @@
+[
+  {
+    "image": "https://s3.amazonaws.com/vrg-interactive/flightnetwork.jpg",
+    "name": "FlightNetwork",
+    "description": "The largest flight booking website in Canada needed a full suite of applications.",
+    "url": "https://flightnetwork.com"
+  },
+  {
+    "image": "https://s3.amazonaws.com/vrg-interactive/aldo.jpg",
+    "name": "Aldo",
+    "description": "VRG worked with the leading producer of high quality footwear to help bring Aldo into the 21st century.",
+    "url": "https://www.aldoshoes.com/ca/en"
+  },
+  {
+    "image": "https://s3.amazonaws.com/vrg-interactive/toyota.jpg",
+    "name": "Toyota Canada",
+    "description": "Toyota Canada’s Corolla treasure hunt contest for both iOS and Facebook.",
+    "url": "https://toyota.ca"
+  },
+  {
+    "image": "https://s3.amazonaws.com/vrg-interactive/monstercat.jpg",
+    "name": "Monstercat Media",
+    "description": "One of the fastest growing record labels for electronic music in Canada.",
+    "url": "https://monstercat.com"
+  },
+  {
+    "image": "https://s3.amazonaws.com/vrg-interactive/kfc.jpg",
+    "name": "KFC Canada",
+    "description": "The Colonel's Club needed to branch out to mobile.",
+    "url": "http://kfc.ca"
+  },
+  {
+    "image": "https://s3.amazonaws.com/vrg-interactive/pizzahut.jpg",
+    "name": "Pizza Hut",
+    "description": "Who doesn't love pizza?! VRG made it even easier to order online.",
+    "url": "https://pizzahut.com"
+  },
+  {
+    "image": "https://s3.amazonaws.com/vrg-interactive/running_room.jpg",
+    "name": "The Running Room",
+    "description": "VRG worked with the Running Room to modernize the homepage & mobile applicaiton.",
+    "url": "https://runningroom.ca"
+  },
+  {
+    "image": "https://s3.amazonaws.com/vrg-interactive/russian_standard.jpg",
+    "name": "Russian Standard Vodka",
+    "description": "Russia's Favourite vodka brand.",
+    "url": "http://russianstandardvodka.com"
+  },
+  {
+    "image": "https://s3.amazonaws.com/vrg-interactive/wallet_twist.jpg",
+    "name": "Wallettwist",
+    "description": "Digital passes in your pocket.",
+    "url": "https://kfc.wallettwist.com/"
+  },
+  {
+    "image": "https://s3.amazonaws.com/vrg-interactive/corlane_sporting_goods.jpg",
+    "name": "Corlane Sporting Goods",
+    "description": "Ecommerce platform, point of sales, seach engine optimization and content strategy development.",
+    "url": "https://corlanes.com/"
+  },
+  {
+    "image": "https://s3.amazonaws.com/vrg-interactive/ballistix.jpg",
+    "name": "Ballistix",
+    "description": "Ecommerce and admin platform for the creation of Custom Rifle Scope Turrets.",
+    "url": "https://ballistix.ca/"
+  },
+  {
+    "image": "https://s3.amazonaws.com/vrg-interactive/oak_clinic.jpg",
+    "name": "Oak Naturopathic Clinic",
+    "description": "Local Business SEO, website and brand devlopment and design.",
+    "url": "https://oakclinic.ca/"
+  }
+]

@@ -1,15 +1,28 @@
 <!DOCTYPE html>
-<html>
+<html lang="<%= I18n.locale %>">
   <head>
-    <title>VrgOnline</title>
+    <%
+      brand_title = "Design, Discovery, & Development Consultants | VRG Interactive"
+      brand_description = "We help local business owners create beautiful, discoverable, high conversion online experiences."
+    %>
+    <meta charset="utf-8">
+    <title><%= content_for?(:title) ? content_for(:title) : brand_title %></title>
+    <meta name="description" content="<%= content_for?(:description) ? content_for(:description) : brand_title %>">
+    <meta name="author" content="VRG Interactive">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <%= render 'application/favicon' %>
+
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
-    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_pack_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
+    <%= render partial: "layouts/flash", flash: flash %>
+    <%= render partial: "layouts/navigation" %>
     <%= yield %>
+    <%= render partial: "layouts/footer" %>
   </body>
 </html>

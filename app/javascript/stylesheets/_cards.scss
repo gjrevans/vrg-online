@@ -1,0 +1,16 @@
+.card {
+  overflow: hidden;
+  &-image {
+    background-position: center;
+    background-size: cover;
+    height: 10rem;
+  }
+  &--link {
+    @extend .transition;
+    color: $body-color;
+    &:hover {
+      @include box-shadow($primary);
+      color: $primary;
+    }
+  }
+}

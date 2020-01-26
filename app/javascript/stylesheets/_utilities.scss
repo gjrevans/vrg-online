@@ -1,0 +1,12 @@
+.animation-delay {
+  @for $i from 1 through 50 {
+    &--#{$i} {
+      animation-delay: #{$i/5}s;
+    }
+  }
+}
+
+.transition {
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}

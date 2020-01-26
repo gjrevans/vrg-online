@@ -1,0 +1,12 @@
+@mixin background-with-overlay($url, $first-color: $black, $second-color: $black, $opacity: 0.5) {
+  background-image: linear-gradient(rgba($first-color, $opacity), rgba($second-color, $opacity)), url($url);
+}
+
+@mixin background-to-color($url, $first-color: $black, $second-color: $black, $first-opacity: 0, $second-opacity: 0) {
+  background-image: linear-gradient(rgba($first-color, $first-opacity), rgba($second-color, $second-opacity)), url($url);
+}
+
+@mixin box-shadow($color: $black) {
+  -webkit-box-shadow: 0px 1px 30px 10px rgba($color, 0.2);
+  box-shadow: 0px 1px 30px 10px rgba($color, 0.2);
+}

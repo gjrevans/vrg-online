@@ -1,0 +1,256 @@
+/* #Globals
+================================================== */
+$logo-height: 2rem;
+$nav-height: $logo-height + (2 * $spacer);
+
+body {
+  background: $primary;
+}
+
+/* #Layouts
+================================================== */
+.l-section {
+  overflow: hidden;
+  @each $size, $value in $content-spacing {
+    &--#{$size} {
+      padding: $value 0 ;
+    }
+  }
+  @each $color, $value in $theme-colors {
+    &--#{$color} {
+      background-color: $value;
+      color: color-yiq(darken($value, 15%));
+      &--bordered {
+        border-top: 1px solid darken($value, 5%);
+        border-bottom: 1px solid darken($value, 5%);
+      }
+      .text-darken {
+        color: darken($value, 20%);
+      }
+    }
+  }
+  &--full {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - #{$nav-height});
+  }
+  &--hero {
+    @include background-to-color("../images/backgrounds/local-coffee-shop.jpg", transparent, $gray-900, 0.5, 1);
+    height: 35rem;
+    background-position: center;
+    background-size: cover;
+  }
+  &__footer {
+    position: absolute;
+    text-align: center;
+    left: 0;
+    right: 0;
+    bottom: 1rem;
+  }
+}
+
+/* #Modules
+================================================== */
+.m-navigation {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  @include media-breakpoint-down(sm) {
+    justify-content: center;
+  }
+  &__logo {
+    height: $logo-height;
+  }
+  ul {
+    list-style: none;
+    margin-bottom: 0;
+    li {
+      display: inline-block;
+      &:not(:last-child) {
+        margin-right: 1rem;
+      }
+    }
+  }
+}
+
+.m-whatwedo {
+  &__item {
+    margin-bottom: $spacer * 3;
+  }
+  &__icon {
+    height: 10rem;
+    margin-bottom: 2rem;
+    img {
+      height: 100%;
+      transition: all 0.5s;
+      &:hover {
+        height: 10.5rem;
+      }
+    }
+  }
+}
+
+.m-aboutus {
+  &__item {
+    margin: $spacer * 1 0 $spacer * 5 0;
+    @include media-breakpoint-down(sm) {
+      text-align: center;
+    }
+  }
+  &__image {
+    display: block;
+    margin: auto;
+    width: 22rem;
+    @include media-breakpoint-down(sm) {
+      width: 100%;
+      margin-bottom: $spacer * 3;
+    }
+  }
+}
+
+.m-ourwork {
+  background: $white;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 1rem 3rem;
+  border-radius: $border-radius;
+  transition: all 0.25s;
+  margin-bottom: $spacer * 2;
+  &__image {
+    overflow: hidden;
+    position: relative;
+    border-radius: $border-radius;
+    transition: all 0.25s;
+    &__body {
+      @extend .animated, .fadeIn;
+      display: none;
+      background: rgba(0, 0, 0, 0.75);
+      color: white;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      padding: $spacer;
+    }
+  }
+  &:hover {
+    box-shadow: rgba(0, 0, 0, 0.4) 0 1rem 3rem;
+    .m-ourwork__image__body {
+      cursor: pointer;
+      display: block;
+    }
+  }
+}
+
+.m-client {
+  margin-bottom: 3rem;
+}
+
+.m-contact {
+  &__title {
+    padding-top: $spacer * 2;
+    h1 {
+      font-weight: 700;
+      font-size: 3.5rem;
+    }
+  }
+  &__subtitle {
+    padding: $spacer * 2 0 $spacer * 1 0;
+  }
+  &__content {
+    padding: $spacer * 3 0;
+  }
+  &__email {
+    padding: $spacer * 1 0;
+  }
+}
+
+/* #Custom
+================================================== */
+.creative-machines-background {
+  background: url("../images/about_us/creativemachines.png") no-repeat right 36px;
+  background-size: 260px;
+  position: relative;
+  height: 310px;
+  width: 270px;
+}
+.creative-machines-pully-1 {
+  position:absolute;
+  width:49px;
+  height:49px;
+  top: 98px;
+  left:12px;
+  background: url("../images/about_us/creativemachines-pulley.png") no-repeat center center;
+  background-size:49px;
+}
+.creative-machines-pully-2 {
+  position:absolute;
+  width: 40px;
+  height: 40px;
+  top: 194px;
+  left: 89px;
+  background: url("../images/about_us/creativemachines-pulley.png") no-repeat center center;
+  background-size: 40px;
+}
+.bubbles {
+  position: absolute;
+  width: 122px;
+  height: 50px;
+  bottom: 204px;
+  left: 48px;
+  z-index: 1;
+}
+.bubble {
+  @extend .animated, .fadeOutUp, .infinite;
+  position: absolute;
+  border-radius: 50%;
+  background-color: #f0818f;
+  &:nth-child(1) {
+    bottom: 8px;
+    left: 40px;
+    width: 10px;
+    height: 10px;
+    animation-delay: 0.05s;
+  }
+  &:nth-child(2) {
+    width: 4px;
+    height: 4px;
+    bottom: 18px;
+    left: 60px;
+    animation-delay: 0.15s;
+  }
+  &:nth-child(3) {
+    width: 6px;
+    height: 6px;
+    bottom: 6px;
+    left: 55px;
+    animation-delay: 0.25s;
+  }
+  &:nth-child(4) {
+    width: 8px;
+    height: 8px;
+    bottom: 18px;
+    left: 73px;
+    animation-delay: 0.35s;
+  }
+  &:nth-child(5) {
+    width: 3px;
+    height: 3px;
+    border-radius: 80px;
+    bottom: 12px;
+    left: 93px;
+  }
+}
+
+/* #Helpers
+================================================== */
+.sticky-mc-stick-face {
+  top: 0;
+  z-index: -1;
+  position: sticky;
+  position: -webkit-sticky;
+}
+
+.text-white-muted {
+  color: rgba($white, 0.75);
+}

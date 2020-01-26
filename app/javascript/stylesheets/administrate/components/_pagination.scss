@@ -1,0 +1,15 @@
+.pagination {
+  @apply mt-3 pl-3 pr-3 text-center;
+
+  .first,
+  .prev,
+  .page,
+  .next,
+  .last {
+    @apply m-3;
+  }
+
+  .current {
+    @apply font-bold;
+  }
+}

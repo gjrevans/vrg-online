@@ -1,0 +1,55 @@
+.cell-label {
+  @apply p-3 uppercase text-left text-xs text-gray-700;
+  &:hover {
+    a {
+      color: var(--primary);
+    }
+
+    svg {
+      fill: var(--primary);
+      transform: rotate(180deg);
+    }
+  }
+
+  a {
+    @apply transition-all inline-block w-full;
+    color: inherit;
+  }
+}
+
+.cell-label--asc,
+.cell-label--desc {
+  @apply font-bold;
+}
+
+.cell-label__sort-indicator {
+  @apply float-right ml-1;
+  float: right;
+
+  svg {
+    @apply fill-current text-gray-400 h-4 w-4 transition-all;
+  }
+}
+
+.cell-label__sort-indicator--desc {
+  transform: rotate(180deg);
+}
+
+.cell-data {
+  @apply p-3;
+}
+
+.cell-data--number,
+.cell-label--number {
+  @apply text-right;
+}
+
+.cell-data--image-field {
+  a {
+    @apply w-24 inline-block p-2;
+    background: $image-bg;
+    img {
+      @apply my-0 mx-auto;
+    }
+  }
+}

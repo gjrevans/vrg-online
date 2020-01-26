@@ -1,0 +1,6 @@
+<script type="text/javascript">
+  window.FLASH = []
+	<% flash.each do |type, message| %>
+    window.FLASH.push({type: "<%= type %>", message: "<%= message %>"});
+	<% end %>
+</script>

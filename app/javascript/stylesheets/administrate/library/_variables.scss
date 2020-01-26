@@ -1,0 +1,16 @@
+// Colors
+$image-bg: rgba(black, 0.2);
+
+// Focus
+$focus-outline-color: var(--primary);
+$focus-outline-width: 3px;
+$focus-outline: $focus-outline-width solid var(--primary);
+$focus-outline-offset: 1px;
+
+// Border
+$base-border-color: var(--gray-400) !default;
+$base-border: 1px solid $base-border-color !default;
+
+// Transitions
+$base-duration: 250ms !default;
+$base-timing: ease-in-out !default;

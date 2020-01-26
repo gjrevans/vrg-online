@@ -1,0 +1,24 @@
+.navigation {
+  @apply bg-gray-100 p-4 font-serif tracking-wide;
+  flex: 1 0 14rem;
+}
+
+.navigation__link {
+  @apply p-3 transition-all block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  &:not(:last-of-type) {
+    @apply mb-3;
+  }
+
+  &:hover,
+  &:focus,
+  &:active,
+  &--active {
+    @apply bg-gray-300 rounded;
+  }
+  &--active {
+    @apply text-primary font-bold;
+  }
+}

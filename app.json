@@ -1,0 +1,22 @@
+{
+  "addons": [
+    "heroku-postgresql"
+  ],
+  "buildpacks": [
+    {
+      "url": "heroku/ruby",
+      "url": "https://github.com/DuckyTeam/heroku-buildpack-imagemagick.git"
+    }
+  ],
+  "env": {
+  },
+  "formation": {
+    "web": {
+      "quantity": 1
+    }
+  },
+  "name": "ballistix",
+  "scripts": {
+  },
+  "stack": "heroku-18"
+}

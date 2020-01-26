@@ -9,6 +9,10 @@ body {
 
 /* #Layouts
 ================================================== */
+.l-main {
+  padding-top: $nav-height;
+}
+
 .l-section {
   overflow: hidden;
   @each $size, $value in $content-spacing {

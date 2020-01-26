@@ -1,8 +1,9 @@
 <nav aria-label="breadcrumb">
   <ol class="breadcrumb">
     <% items.each_with_index do |item, index| %>
-      <li class="breadcrumb-item <% "active" if index == items.length %>" aria-current="page">
-        <%= link_to item[:title], item[:link] %>
+    <% is_active = index == items.length - 1 %>
+      <li class="breadcrumb-item <%= "active" if is_active %>">
+        <%= is_active ? item[:title] : link_to(item[:title], item[:link]) %>
       </li>
     <% end %>
   </ol>

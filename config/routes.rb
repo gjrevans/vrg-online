@@ -3,10 +3,12 @@ Rails.application.routes.draw do
     root to: "users#index"
     resources :users
     resources :articles
+    resources :projects
   end
 
   devise_for :users
   resources :articles, only: %i[index show], param: :slug
+  resources :projects, only: %i[index show], param: :slug
   resource :sitemap, only: :show
 
   # Public marketing homepage

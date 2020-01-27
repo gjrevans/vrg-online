@@ -1,0 +1,66 @@
+[
+  {
+    "columns": "col-lg-6",
+    "show_link": true,
+    "link": "services/digital-discovery-and-seo",
+    "image": "what_we_do/seo.svg",
+    "title": "Digital Discovery & SEO",
+    "description": "You don't spend much time on the second page of Google, so why should your website? Plain and simply, we help businesses get to the first page on top search engines (Google, Bing, and Yahoo) so that they're seen first. We help establish your presence and a long term content strategy so that you obtain and keep your rank for years to come."
+  },
+  {
+    "columns": "col-lg-6",
+    "show_link": true,
+    "link": "services/web-design-and-development",
+    "image": "what_we_do/code.svg",
+    "title": "Web Design & Development",
+    "description": "Website, mobile apps and beyond. We develop software that suprises and delights across all platforms and devices. Got an idea, just ask us about it -- we love chatting with excited entrepreneurs."
+  },
+  {
+    "columns": "col-lg-4",
+    "show_link": false,
+    "link": "services/branding-and-design",
+    "image": "what_we_do/branding.svg",
+    "title": "Branding & Design",
+    "description": "Logo design, brand identity, business collateral and more. We help our clients establish a beautiful, reproduceable and modern brand that will stand the test of time and attract new business."
+  },
+  {
+    "columns": "col-lg-4",
+    "show_link": false,
+    "link": "services/video-production",
+    "image": "what_we_do/video.svg",
+    "title": "Video Production",
+    "description": "If a picture is worth 1000 words, then a great video can change the way you do business. Our world class video development team can help you create and express exactly what you want to say through this profoundly powerful medium."
+  },
+  {
+    "columns": "col-lg-4",
+    "show_link": false,
+    "link": "services/paid-search",
+    "image": "what_we_do/paid-search.svg",
+    "title": "Paid Search",
+    "description": "Rocket to the top of search engines and stand out above your competitors. We offer customized paid marketing support for Google, Facebook and other key paid search platforms."
+  },
+  {
+    "columns": "col-lg-4",
+    "show_link": false,
+    "link": "services/conversion-optimization",
+    "image": "what_we_do/conversion.svg",
+    "title": "Conversion Optimization",
+    "description": "Don't just drive traffic to your site, convert it. We help design and deploy mobile and desktop optimized landing pages, experience improvments and more to help capture leads and the analytics you need to observe and improve your conversion."
+  },
+  {
+    "columns": "col-lg-4",
+    "show_link": false,
+    "link": "services/engagement-and-retargeting",
+    "image": "what_we_do/laptop.svg",
+    "title": "Engaugement & Retargeting",
+    "description": "Your best clients are clients who have already bought from you. So, how do you get them to come back? We help design bespoke lead capture and reengaugement campaigns to ensure your customers keep coming back."
+  },
+  {
+    "columns": "col-lg-4",
+    "show_link": false,
+    "link": "services/loyalty-programs",
+    "image": "what_we_do/games.svg",
+    "title": "Loyalty Programs",
+    "description": "Reward your clients for their loyalty with points or in-house value that they can redeem as they continue to buy from you. And, we help you do it though your exisitng CMS or POS platform so that you're not introducing new work or overhead."
+  }
+]

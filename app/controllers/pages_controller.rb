@@ -1,6 +1,7 @@
 class PagesController < ApplicationController
   def index
-    @our_work = JSON.parse(File.read('public/json/our_work.json'))
+    @projects = Project.all.order(created_at: :desc)
+    @services = JSON.parse(File.read('public/json/services.json'))
     @clients = JSON.parse(File.read('public/json/clients.json'))
   end
 end

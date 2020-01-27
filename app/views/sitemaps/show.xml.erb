@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc><%= root_url %></loc>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc><%= services_digital_discovery_and_seo_url %></loc>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc><%= services_web_design_and_development %></loc>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <% Article.all.each do |article| %>
+    <url>
+      <loc><%= article_url(slug: article.slug) %></loc>
+      <changefreq>weekly</changefreq>
+    </url>
+  <% end %>
+
+  <% Project.all.each do |project| %>
+    <url>
+      <loc><%= project_url(slug: project.slug) %></loc>
+      <changefreq>weekly</changefreq>
+    </url>
+  <% end %>
+</urlset>

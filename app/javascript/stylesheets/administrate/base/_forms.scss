@@ -6,22 +6,22 @@ fieldset {
 }
 
 legend {
-  @apply font-bold m-0 p-0;
+  @extend .font-weight-bold, .m-0, .p-0;
 }
 
 label {
-  @apply font-bold m-0 block;
+  @extend .font-weight-bold, .m-0, .d-block;
 }
 
 input,
 select {
-  @apply block;
+  @extend .d-block;
 }
 
 input,
 select,
 textarea {
-  @apply block;
+  @extend .d-block;
 }
 
 [type="color"],
@@ -39,25 +39,22 @@ textarea {
 [type="week"],
 input:not([type]),
 textarea {
-  @apply border rounded;
+  @extend .border, .rounded;
   appearance: none;
   background-color: $white;
   padding: 0.5em;
   width: 100%;
-  &:hover {
-    @apply border-gray-400;
-  }
   &:focus {
-    @apply border-primary;
+    @extend .border-primary;
     outline: none;
   }
 
   &:disabled {
-    @apply bg-gray-100;
+    @extend .bg-light;
     cursor: not-allowed;
 
     &:hover {
-      @apply border border-primary;
+      @extend .border, .border-primary;
     }
   }
 
@@ -72,7 +69,7 @@ textarea {
 
 [type="checkbox"],
 [type="radio"] {
-  @apply mr-3 inline;
+  @extend .mr-3, .d-inline;
 }
 
 [type="file"] {

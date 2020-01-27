@@ -1,3 +1,16 @@
+<% content_for(:title) { @article.meta_title } %>
+<% content_for(:description) { @article.meta_description } %>
+
+<%=
+  render partial: "layouts/breadcrumb", locals: {
+    items: [
+      {link: root_path, title: "Home"},
+      {link: articles_path, title: "Articles"},
+      {link: "#", title: @article.title}
+    ]
+  }
+%>
+
 <!-- Style Override for Background Image -->
 <style media="screen">
 .l-section--article {
@@ -14,22 +27,13 @@
     <div class="row">
       <div class="col-md-12">
         <h1 class="mb-2"><%= @article.title %></h1>
-        <p><%= local_time_ago(@article.created_at) %></p>
+        <p><%= t("articles.show.posted_at", time: local_time_ago(@article.created_at)).html_safe %></p>
       </div>
     </div>
   </div>
 </section>
 <section class="l-section l-section--white l-section--sm">
   <div class="container">
-    <%=
-      render partial: "layouts/breadcrumb", locals: {
-        items: [
-          {link: root_path, title: "Home"},
-          {link: articles_path, title: "Articles"},
-          {link: "#", title: @article.title}
-        ]
-      }
-    %>
     <%= @article.content %>
   </div>
 </section>

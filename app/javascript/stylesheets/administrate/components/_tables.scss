@@ -1,0 +1,6 @@
+table {
+  width: 100%;
+  tr {
+    @extend .border-bottom, .border-light
+  }
+}

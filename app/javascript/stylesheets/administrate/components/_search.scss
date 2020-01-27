@@ -1,7 +1,7 @@
 $_search-icon-size: 1rem;
 
 .search {
-  @apply flex items-center;
+  @extend .d-flex, .align-items-center;
   margin-left: auto;
   margin-right: 2rem;
   max-width: 20rem;
@@ -10,14 +10,13 @@ $_search-icon-size: 1rem;
 }
 
 .search__input {
-  @apply appearance-none block w-full bg-white border-gray-300 text-gray-900 border py-2 px-4 rounded cursor-pointer;
+  @extend .d-block, .w-100, .bg-white, .border-medium, .text-dark, .border, .py-2, .px-5, .rounded;
   padding-left: $_search-icon-size * 2.5;
   padding-right: $_search-icon-size * 2.5;
 }
 
 .search__eyeglass-icon {
-  @apply fill-current;
-  color: var(--gray-400);
+  @extend .fill-current, .text-medium;
   height: $_search-icon-size;
   left: $_search-icon-size;
   position: absolute;
@@ -36,13 +35,13 @@ $_search-icon-size: 1rem;
 }
 
 .search__clear-icon {
-  @apply fill-current text-gray-400;
+  @extend .fill-current, .text-medium;
   height: $_search-icon-size;
   position: absolute;
-  transition: fill $base-duration $base-timing;
+  transition: $base-duration $base-timing;
   width: $_search-icon-size;
 
   &:hover {
-    @apply fill-current text-primary;
+    @extend .fill-current, .text-primary;
   }
 }

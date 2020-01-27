@@ -33,6 +33,27 @@ body {
       }
     }
   }
+  &__overlay {
+    background: rgba($black, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  &__breadcrumb {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    color: $dark;
+    &__item {
+      display: inline;
+      &:not(:last-child):after {
+        @extend .px-2;
+        content: "/"
+      }
+    }
+  }
   &--full {
     display: flex;
     align-items: center;
@@ -40,8 +61,22 @@ body {
     height: calc(100vh - #{$nav-height});
   }
   &--hero {
-    @include background-to-color("../images/backgrounds/local-barber.jpg", transparent, $gray-900, 0.5, 1);
+    position: relative;
+    transition: background 1s linear;
+    -webkit-transition: background 1s linear;
     height: 35rem;
+    background-position: center;
+    background-size: cover;
+  }
+  &--articles {
+    @include background-to-color("../images/backgrounds/team-at-work.jpg", transparent, $gray-900, 0.5, 0.5);
+    height: 25rem;
+    background-position: center;
+    background-size: cover;
+  }
+  &--projects {
+    @include background-to-color("../images/backgrounds/open-office.jpg", transparent, $gray-900, 0.5, 0.5);
+    height: 25rem;
     background-position: center;
     background-size: cover;
   }
@@ -81,7 +116,7 @@ body {
 
 .m-whatwedo {
   &__item {
-    margin-bottom: $spacer * 3;
+    padding: $spacer * 3 0;
   }
   &__icon {
     height: 10rem;

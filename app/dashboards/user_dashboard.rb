@@ -31,7 +31,6 @@ class UserDashboard < Administrate::BaseDashboard
   first_name
   last_name
   email
-  reset_password_token
   admin
   ].freeze
 
@@ -42,10 +41,8 @@ class UserDashboard < Administrate::BaseDashboard
   first_name
   last_name
   email
-  encrypted_password
   reset_password_token
   reset_password_sent_at
-  remember_created_at
   created_at
   updated_at
   admin
@@ -58,10 +55,6 @@ class UserDashboard < Administrate::BaseDashboard
   first_name
   last_name
   email
-  encrypted_password
-  reset_password_token
-  reset_password_sent_at
-  remember_created_at
   admin
   ].freeze
 

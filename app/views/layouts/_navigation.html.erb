@@ -1,12 +1,13 @@
 <nav class="l-section l-section--primary l-section--xs l-section--primary--bordered fixed-top">
 	<div class="container">
 		<div class="m-navigation">
-			<%= link_to image_pack_tag("logo.svg", class: "svg m-navigation__logo"), root_path %>
+      <%= link_to inline_svg_pack_tag("media/images/logo.svg", class: "m-navigation__logo text-white"), root_path %>
 			<ul class="list-inline d-none d-sm-inline">
-				<li class="list-inline-item"><a href="#whatwedo" class="text-white">What We Do</a></li>
-				<li class="list-inline-item"><a href="#aboutus" class="text-white">About Us</a></li>
-				<li class="list-inline-item"><a href="#ourwork" class="text-white">Our Work</a></li>
-				<li class="list-inline-item"><a href="#contact" class="text-white">Contact us</a></li>
+				<li class="list-inline-item"><%= link_to t("navigation.services"), root_path(anchor: "services"), class: "text-white" %></li>
+				<li class="list-inline-item"><%= link_to t("navigation.about"), root_path(anchor: "aboutus"), class: "text-white" %></li>
+				<li class="list-inline-item"><%= link_to t("navigation.work"), root_path(anchor: "ourwork"), class: "text-white" %></li>
+				<li class="list-inline-item"><%= link_to t("navigation.contact"), root_path(anchor: "contact"), class: "text-white" %></li>
+        <li class="list-inline-item"><%= link_to t("navigation.articles"), articles_path, class: "text-white" %></li>
 			</ul>
 		</div>
 	</div>

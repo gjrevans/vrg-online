@@ -8,6 +8,7 @@ as defined by the routes in the `admin/` namespace
 %>
 
 <nav class="navigation" role="navigation">
+  <%= link_to inline_svg_pack_tag("media/images/logo.svg", class: "w-25 mb-4 text-primary"), root_path %>
   <% Administrate::Namespace.new(namespace).resources.each do |resource| %>
     <%= link_to(
       display_resource_name(resource),

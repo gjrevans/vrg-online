@@ -3,25 +3,13 @@
 @import url('https://fonts.googleapis.com/css?family=Nunito:300,400,600,700');
 
 /* Libraries */
-
 @import "~bootstrap/scss/functions";
-@import "~bootstrap/scss/variables";
 @import "bootstrap/variables";
-@import "~bootstrap/scss/mixins";
-@import "~bootstrap/scss/utilities";
 @import "bootstrap/customization";
+@import "bootstrap";
 
-@import "~bootstrap/scss/type";
-@import "~bootstrap/scss/tables";
-@import "~bootstrap/scss/forms";
-@import "~bootstrap/scss/buttons";
-@import "~bootstrap/scss/navbar";
-@import "~bootstrap/scss/badge";
-@import "~bootstrap/scss/alert";
-@import "~bootstrap/scss/dropdown";
-@import "~bootstrap/scss/breadcrumb";
 
-// Administrate
+/* Administrate */
 @import "administrate/library/variables";
 @import "administrate/library/clearfix";
 @import "administrate/library/data-label";
@@ -39,9 +27,12 @@
 @import "administrate/components/navigation";
 @import "administrate/components/pagination";
 @import "administrate/components/search";
+@import "administrate/components/tables";
 
 /* Application */
 @import "actiontext";
+@import "utilities";
+@import "mixins";
 
 body {
   background: $gray-100;

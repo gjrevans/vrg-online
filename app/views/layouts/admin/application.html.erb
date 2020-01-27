@@ -18,10 +18,7 @@ By default, it renders:
   <meta charset="utf-8">
   <meta name="ROBOTS" content="NOODP">
   <meta name="viewport" content="initial-scale=1">
-  <title>
-    <%= content_for(:title) %> - <%= application_title %>
-  </title>
-  <%= render "stylesheet" %>
+  <title><%= content_for(:title) %> - <%= application_title %></title>
   <%= javascript_pack_tag 'administrate', 'data-turbolinks-track': 'reload' %>
   <%= stylesheet_pack_tag 'administrate', media: 'all', 'data-turbolinks-track': 'reload' %>
   <%= csrf_meta_tags %>

@@ -69,6 +69,7 @@ $info:          $cyan !default;
 $warning:       $yellow !default;
 $danger:        $red !default;
 $light:         $gray-100 !default;
+$medium:        $gray-400 !default;
 $dark:          $gray-800 !default;
 
 $theme-colors: () !default;
@@ -81,6 +82,7 @@ $theme-colors: map-merge((
   "warning":    $warning,
   "danger":     $danger,
   "light":      $light,
+  "medium":     $medium,
   "white":      $white,
   "dark":       $dark
 ), $theme-colors);
@@ -278,7 +280,7 @@ $lead-font-weight:            300 !default;
 
 $small-font-size:             80% !default;
 
-$text-muted:                  $gray-600 !default;
+$text-muted:                  $gray-500 !default;
 
 $blockquote-small-color:      $gray-600 !default;
 $blockquote-font-size:        ($font-size-base * 1.25) !default;

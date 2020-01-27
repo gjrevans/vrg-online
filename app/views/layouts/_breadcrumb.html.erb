@@ -1,10 +1,12 @@
-<nav aria-label="breadcrumb">
-  <ol class="breadcrumb">
-    <% items.each_with_index do |item, index| %>
-    <% is_active = index == items.length - 1 %>
-      <li class="breadcrumb-item <%= "active" if is_active %>">
-        <%= is_active ? item[:title] : link_to(item[:title], item[:link]) %>
-      </li>
-    <% end %>
-  </ol>
+<nav class="l-section l-section--xs text-white bg-white">
+  <div class="container">
+    <ol class="l-section__breadcrumb">
+      <% items.each_with_index do |item, index| %>
+      <% is_active = index == items.length - 1 %>
+        <li class="l-section__breadcrumb__item <%= "active" if is_active %>">
+          <%= is_active ? item[:title] : link_to(item[:title], item[:link]) %>
+        </li>
+      <% end %>
+    </ol>
+  </div>
 </nav>

@@ -14,6 +14,7 @@ require("@rails/actiontext")
 
 import "bootstrap-notify"
 import "src/flash"
+import "src/scroll"
 
 import LocalTime from "local-time"
 LocalTime.start()

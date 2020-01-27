@@ -1,5 +1,6 @@
 .field-unit {
   @include administrate-clearfix;
+  @extend .mb-3;
   align-items: center;
   display: flex;
   position: relative;
@@ -7,7 +8,7 @@
 }
 
 .field-unit__label {
-  @apply float-left ml-4 text-right;
+  @extend .float-left, .ml-2, .text-right;
   width: calc(15% - 1rem);
   label {
     margin-bottom: 0 !important;
@@ -15,7 +16,7 @@
 }
 
 .field-unit__field {
-  @apply float-left ml-8;
+  @extend .float-left, .ml-3;
   width: 45%;
   select {
     @extend .form-control;
@@ -23,12 +24,12 @@
 }
 
 .field-unit__error-notice {
-  @apply text-danger mb-6 block;
+  @extend .text-danger, .mb-2, .d-block;
   margin-left: calc(15% + 2rem);
 }
 
 .field-unit--nested {
-  @apply p-3 border border-gray-400 w-1/2;
+  @extend .p-3, .border, .border-dark, .w-50;
   margin-left: 7.5%;
 
   .field-unit__field {
@@ -44,6 +45,6 @@
   input,
   textarea,
   select {
-    @apply border border-danger;
+    @extend .border, .border-danger;
   }
 }

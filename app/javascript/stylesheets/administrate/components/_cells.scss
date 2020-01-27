@@ -1,5 +1,5 @@
 .cell-label {
-  @apply p-3 uppercase text-left text-xs text-gray-700;
+  @extend .p-3, .text-uppercase, .font-weight-bold, .text-left, .small, .text-dark;
   &:hover {
     a {
       color: var(--primary);
@@ -12,22 +12,24 @@
   }
 
   a {
-    @apply transition-all inline-block w-full;
+    @extend .transition, .d-inline-block, .w-100;
     color: inherit;
   }
 }
 
 .cell-label--asc,
 .cell-label--desc {
-  @apply font-bold;
+  @extend .font-weight-bold;
 }
 
 .cell-label__sort-indicator {
-  @apply float-right ml-1;
+  @extend .float-right, .ml-1;
   float: right;
 
   svg {
-    @apply fill-current text-gray-400 h-4 w-4 transition-all;
+    @extend .text-secondary, .transition;
+    height: 1rem;
+    width: 1rem;
   }
 }
 
@@ -36,20 +38,21 @@
 }
 
 .cell-data {
-  @apply p-3;
+  @extend .p-3;
 }
 
 .cell-data--number,
 .cell-label--number {
-  @apply text-right;
+  @extend .text-right;
 }
 
 .cell-data--image-field {
   a {
-    @apply w-24 inline-block p-2;
+    @extend .d-inline-block, .p-2;
+    width: 3rem;
     background: $image-bg;
     img {
-      @apply my-0 mx-auto;
+      @extend .my-0, .mx-auto;
     }
   }
 }

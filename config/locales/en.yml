@@ -30,4 +30,32 @@
 # available at https://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+  general:
+    brand_name: "VRG Interactive"
+    email_address: "hello@vrginteractive.com"
+  navigation:
+    services: "Services"
+    about: "About Us"
+    work: "Our Work"
+    contact: "Contact Us"
+    articles: "Resources"
+  footer:
+    admin: "Admin Panel"
+    location: "Location"
+    contact: "Contact"
+    sign_in: "Sign In"
+    sign_out: "Sign Out"
+  pages:
+    index:
+      page_title: "Be Found Online & Grow Your Business."
+      page_description: "VRG Interactive is a full service creative and digital agency. We work with local business owners to create beautiful, discoverable, high conversion online experiences."
+  projects:
+    index:
+      page_title: "Our Work"
+      page_description: "Check out some of the recent work and projects developed and distributed by the team at VRG Interactive."
+  articles:
+    index:
+      page_title: "Resources & Articles"
+      page_description: "Helpful web development, design and search engine optimization tips and tricks from our team of experts."
+    show:
+      posted_at: "Posted on %{time}"

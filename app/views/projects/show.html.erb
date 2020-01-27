@@ -1,7 +1,17 @@
+<%=
+  render partial: "layouts/breadcrumb", locals: {
+    items: [
+      {link: root_path, title: "Home"},
+      {link: projects_path, title: "Projects"},
+      {link: "#", title: @project.title}
+    ]
+  }
+%>
+
 <!-- Style Override for Background Image -->
 <style media="screen">
 .l-section--project {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(<%= @project.image_url %>);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(<%= @project.image_url %>);
   background-position: center;
   background-size: cover;
   height: 20rem;
@@ -13,23 +23,15 @@
   <div class="contianer">
     <div class="row">
       <div class="col-md-12">
-        <h1 class="mb-2"><%= @project.title %></h1>
-        <p><%= local_time_ago(@project.created_at) %></p>
+
       </div>
     </div>
   </div>
 </section>
 <section class="l-section l-section--white l-section--sm">
   <div class="container">
-    <%=
-      render partial: "layouts/breadcrumb", locals: {
-        items: [
-          {link: root_path, title: "Home"},
-          {link: projects_path, title: "Projects"},
-          {link: "#", title: @project.title}
-        ]
-      }
-    %>
+    <h1 class="mb-2"><%= @project.title %></h1>
+    <p class="text-muted"><%= local_time_ago(@project.created_at) %></p>
     <%= @project.content %>
   </div>
 </section>

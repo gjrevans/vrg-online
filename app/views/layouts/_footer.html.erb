@@ -2,16 +2,17 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-md-4">
-				<p class="small text-uppercase">VRG Interactive</p>
+				<p class="small text-uppercase"><%= t("general.brand_name") %></p>
 				<ul class="list-unstyled">
-					<li><a href="#whatwedo">What We Do</a></li>
-					<li><a href="#aboutus">About Us</a></li>
-					<li><a href="#ourwork">Our Work</a></li>
-					<li><a href="#contact">Contact us</a></li>
+          <li><%= link_to t("navigation.services"), root_path(anchor: "services") %></li>
+  				<li><%= link_to t("navigation.about"), root_path(anchor: "aboutus")%></li>
+  				<li><%= link_to t("navigation.work"), root_path(anchor: "ourwork") %></li>
+  				<li><%= link_to t("navigation.contact"), root_path(anchor: "contact") %></li>
+          <li><%= link_to t("navigation.articles"), articles_path %></li>
 				</ul>
 			</div>
 			<div class="col-md-4">
-				<p class="small text-uppercase">Location</p>
+				<p class="small text-uppercase"><%= t("footer.location") %></p>
 				<p class="text-muted">
 					520 - 720 King Street West<br />
 					Toronto Ontario<br />
@@ -19,13 +20,14 @@
 				</p>
 			</div>
 			<div class="col-md-4">
-				<p class="small text-uppercase">Contact</p>
+        <p class="small text-uppercase"><%= t("footer.contact") %></p>
         <ul class="list-unstyled">
-          <li><%= mail_to "hello@vrginteractive.com", "hello@vrginteractive.com" %></li>
+          <li><%= mail_to t("general.email_address") %></li>
           <% if user_signed_in? %>
-            <li><%= link_to t('navigation.logout'), destroy_user_session_path, method: :delete %></li>
+            <li><%= link_to t('footer.admin'), admin_root_path %></li>
+            <li><%= link_to t('footer.sign_out'), destroy_user_session_path, method: :delete %></li>
           <% else %>
-            <li><%= link_to t('navigation.sign_in'), new_user_session_path %></li>
+            <li><%= link_to t('footer.sign_in'), new_user_session_path %></li>
           <% end %>
         </ul>
 

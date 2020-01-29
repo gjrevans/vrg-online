@@ -32,6 +32,8 @@
 en:
   general:
     brand_name: "VRG Interactive"
+    brand_title: "VRG Interactive | Development & Design Consultants"
+    brand_description: "VRG Interactive is a full service creative and digital agency. We work with local business owners to create beautiful, discoverable, high conversion online experiences."
     email_address: "hello@vrginteractive.com"
   navigation:
     services: "Services"
@@ -39,6 +41,9 @@ en:
     work: "Our Work"
     contact: "Contact Us"
     articles: "Resources"
+    all_services: "All Services"
+    seo: "Search Engine Optimization"
+    development: "Software Development"
   footer:
     admin: "Admin Panel"
     location: "Location"
@@ -47,8 +52,48 @@ en:
     sign_out: "Sign Out"
   pages:
     index:
-      page_title: "Be Found Online & Grow Your Business."
-      page_description: "VRG Interactive is a full service creative and digital agency. We work with local business owners to create beautiful, discoverable, high conversion online experiences."
+      page_title: "Running Your Business is Hard Work, But Being Found Online Doesn't Have To Be."
+      page_description: "VRG Interactive is a full service creative agency. We work with local business owners to design & develop beautiful, discoverable, high conversion online experiences."
+      cta_1: Ready To Chat, %{email}.
+      contact_us: "Get In Touch"
+  services:
+    digital_discovery:
+      page_title: "Seach Engine Optimization & Online Discovery"
+      page_description: "You don't spend much time on the second page of Google, so why should your website? We help business owners get their website listed on the first page of Google."
+      section_1:
+        title: "What Is Search Engine Optimization?"
+        body: "In simple terms, it's the process of maximizing a website's visibility on the internet by optimizing a site's code for \"crawlability\" and by creating targeted on-site content.<br /><br /><strong class=\"text-primary\">Crawl-a-bility:</strong> describes a search engine's ability to access and read (i.e. crawl) the content on a website. If a site has no crawlability issues, then a search engine's web crawlers can access all of the site's content easily by following the links between pages.<br /><br />In addition to Crawlability, you site should also include \"keyword relevant content\" like landing pages, business descriptions and addresses, contact information, relevant blog articles, videos, and more. We must do all of this work so search engines like Google, Bing, and Yahoo can learn about the purpose of the site and better represent it in their search results.<br /></br />To win at search one must inevitably think like a search engine. But first, we must think like a customer..."
+      section_2:
+        title: "Thinking Like A Customer..."
+        body: "Imagine, you're the owner of Bob's Towing Company. With hopes of acquiring new customers online, you recently paid a small fortune to have a local software firm to develop you a shiny new website. How exciting!<br /><br />Suddenly and without your knowledge, a customer appears just up the street from your business location. They've hit a nail and are in need of a tow. While it sucks for them, it could mean new business for you.<br /><br />This potential customer is new to the area so they do what any normal 21st century citizen would and they pull out their trusty cell phone and begin a Google search. Thank goodness you had that website build, right!? <br /><br />But, for what do they search?<br /><br />Well, unfortunately for you Bob, it's not going to be \"Bob's Towing Company\". Instead they’ll likely search for something like \"towing company near me\" and Google will do it’s best to show them matching businesses in the area."
+      section_3:
+        title: "Being Keyword Ready"
+        body: "Well, Bad news for you Bob… your biggest competitor \"Joey’s Towing Company\" is the first result on Google and they have 10 five star reviews! In fact, your brand new website doesn't even show up in any of any search result page.<br /><br />Your potential customer clicks on Joey’s website, dials their phone number and within a few seconds you’ve lost a near perfect lead.<br /><br />What went wrong? Well, despite your best intentions, your website hasn’t been optimized so that search engines like Google can find it, read through your content and learn about your services.<br /><br />It’s missing special tags in the code and targeted content that lets search engines like Google know what your business is all about, where you’re located and most importantly that you are in fact a \"towing company\" near that potential client.<br /><br />There is hope though Bob... With a little bit of elbow grease, you can obtain that coveted first page spot and beat Joey to the punch next time."
+      section_4:
+        title: "How Can I Become The #1 Search Result?"
+        body: "As we've learned through our example, search engines use a number of signaling factors that determine which pages show up first and which ones get burried. These signals are predominantly based on how well a website's content matches a customers search term and search engines call these search terms \"keywords\". These days, it's not just about having a website, but ensuring your website is optimized for discovery. It's your website's job to contain the right content that signals to a search engine that you are the correct match for as many relevant keywords as possible.<br /><br /> Google determines the keywords your site matches by reading through the content on your website to pick out phrases, locations and other important criteria that it can match to a customer search term.<br /><br />The reality is that anyone can, with the time, know-how and tools, improve the rank of a website. However, there is a right way and a wrong way to do it and the ramifications of doing it incorrectly can blacklist your website for years to come."
+      suggestions_title: "Our Top 6 SEO Must-Dos for 2020"
+      suggestions_body: "Whether you're ready to work with us or simply want to give SEO a try yourself, we're here to help. At the end of the day, we believe in empowering business with tools and know-how so that they can be successful on their own. As such, we've compiled the following list of our top 6 SEO improvements that you can do yourself. Completing these actions will get you well on your way to ranking higher on Google, Bing, Yahoo, etc."
+      suggestion_1:
+        title: "Create A Backlink Strategy"
+        body: "Backlinks are links from other websites to your website. Google and other search engines looks at the number of backlinks and the quality of the sites where the backlinks exist to help determine your website's domain authority (i.e. an algorithmic score assigned to a website that dictates your authority over a given subject or topic). A well formed content and outreach strategy can help your gain backlinks. Create great content on your site and share with with the world and other will enevitable link to it."
+      suggestion_2:
+        title: "Perform a Site Audit"
+        body: "There are a multitude of tools that can help your perform a site audit. These audits will highlight the main issues with your site and provide your with additional context and guidance to correct them. Check out <a href=\"https://www.woorank.com\" rel=\"nofollow\" target=\"_blank\">WooRank</a> or Neil Patel's <a href=\"https://neilpatel.com/ubersuggest/\" rel=\"nofollow\" target=\"_blank\">UberSuggest</a>. Great news, typically your first audit is free!"
+      suggestion_3:
+        title: "Improve Crawlability"
+        body: "If your site is using a CMS like Wordpress or Joomla, there are a number of plugins your can add to ensure that the proper <code>HTML</code> tags are being added to your website such that search engine's can properly crawl and index your page. We recommend adding a the <strong>Yoast SEO plugin</strong> for wordpress which will allow you to set unique page <code>meta-title</code> and <code>meta-description</code>  values for all of your web pages. Search engines need to know the purpose of each page on your website otherwise it will mark it as duplicate content. These meta properties are the most fundamental values your can set to help search engines differentiate between your website content."
+      suggestion_4:
+        title: "Develop a Content Strategy"
+        body: "Ensuring your homepage ranks well for one keyword is a great place to start, but overtime it will be important to develop additional pages that rank well for alternative search terms (i.e. keywords). Search engines love fresh, relevant and high quality content. A content strategy is simply a set of internal guidelines that you and your team can follow that dictate the type of content you're posting, it's intended audience and the frequency with which you post. If developing content internally seems overwhelming, consider outsourcing your content development or reach out to us at VRG Interactive. We'd love to help develop and delploy and awesome content strategy for your business."
+      suggestion_5:
+        title: "Create a Sitemap"
+        body: "In addition to developing content on your site, you also need to tell search engines about the pages on your site. The simplest way to do this is by creating a sitemap. You can do this programatically by writing some code or use one of the many tools that exisits to manually create one. Once you have a sitemap, you can submit it to Google, Bing, etc. by signing up for their webmaster tools. Check out tools like <a href=\"https://www.powermapper.com/products/mapper/ads/site-mapping\" rel=\"nofollow\" target=\"_blank\">Powermapper</a> or <a href=\"https://www.mysitemapgenerator.com\" rel=\"nofollow\" target=\"_blank\">My Sitemap Generator</a> to get started."
+      suggestion_6:
+        title: "Sign Up For Webmaster Tool"
+        body: "<a href=\"https://search.google.com/search-console/about\" rel=\"nofollow\" target=\"_blank\">Search Console</a> is a fanstatic tool, by our friends over at Google. By connecting your site to Google Search Console your be able to see the number of impressions your site is getting, the number of clicks and where your page is ranking for certain keywords. <a href=\"https://www.bing.com/toolbox/webmaster\" rel=\"nofollow\" target=\"_blank\">Webmaster Tools</a> is Bing's search console equivallent."
+      call_to_action_1: "Ready to boost your rank on the most popular search engines?"
+      call_to_action_2: "With all that said, we know you're busy running your business and we'd love to help. If you're interested in talking with us about how our SEO experts can help improve your page ranking, then let's chat."
   projects:
     index:
       page_title: "Our Work"

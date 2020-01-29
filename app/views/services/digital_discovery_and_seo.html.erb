@@ -1,9 +1,65 @@
-<div class="l-section l-section--lg l-section--white">
+<% content_for(:title) { t("services.digital_discovery.page_title") } %>
+<% content_for(:description) { t("services.digital_discovery.page_description") } %>
+<header class="l-section l-section--xl">
   <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <h1>Hello World</h1>
+		<div class="row d-flex justify-content-center align-items-center">
+			<div class="col-md-6 order-md-12">
+				<h1 class="text-white"><%= t("services.digital_discovery.page_title") %></h1>
+        <p class="text-white-muted"><%= t("services.digital_discovery.page_description") %></p>
+        <%= link_to "Lets Work Together", "#contact", class: "btn btn-info px-5" %>
+			</div>
+      <div class="col-md-6">
+        <%= image_pack_tag("what_we_do/seo.svg", class: "w-75") %>
       </div>
+		</div>
+  </div>
+</header>
+<section class="l-section l-section--lg l-section--white">
+  <div class="container">
+    <% @items.each_with_index do |item, index| %>
+      <div class="text-center text-md-left py-5">
+        <h4 class="d-flex align-items-center mb-3">
+          <div class="mr-2">
+            <div class="d-flex align-items-center justify-content-center bg-primary rounded p-2">
+              <i class="<%= item["icon"] %> fa-fw text-white"></i>
+            </div>
+          </div>
+          <%= t(item["title"]) %>
+        </h4>
+        <p class="text-medium"><%= t(item["body"]).html_safe %></p>
+      </div>
+    <% end %>
+    <div class="text-center border rounded p-3">
+      <div class="lead mb-3"><%= t("services.digital_discovery.call_to_action_1")%></div>
+      <%= link_to "Lets Work Together", "#contact", class: "btn btn-warning px-5" %>
     </div>
   </div>
-</div>
+</section>
+
+<section class="l-section l-section--lg l-section--light">
+  <div class="container">
+    <div class="text-center">
+      <h2><%= t("services.digital_discovery.suggestions_title").html_safe %></h2>
+      <p class="mb-4"><%= t("services.digital_discovery.suggestions_body")%></p>
+    </div>
+    <div class="l-section__scroll row">
+      <% @suggestions.each_with_index do |suggestion, index| %>
+        <div class="col-md-6 col-10 text-center mb-5">
+          <div class="card h-100">
+            <div class="card-body">
+              <i class="<%= suggestion["icon"] %> fa-3x text-primary my-3"></i>
+              <h5><%= t(suggestion["title"]) %></h5>
+              <p class="text-medium"><%= t(suggestion["body"]).html_safe %></p>
+            </div>
+          </div>
+        </div>
+      <% end %>
+    </div>
+    <div class="text-center">
+      <div class="lead"><%= t("services.digital_discovery.call_to_action_2")%></div>
+      <i class="fas fa-arrow-down animated infinite bounce text-primary mt-5 fa-2x"></i>
+    </div>
+  </div>
+</section>
+
+<%= render partial: "layouts/contact" %>

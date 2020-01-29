@@ -3,7 +3,17 @@
 		<div class="m-navigation">
       <%= link_to inline_svg_pack_tag("media/images/logo.svg", class: "m-navigation__logo text-white"), root_path %>
 			<ul class="list-inline d-none d-sm-inline">
-				<li class="list-inline-item"><%= link_to t("navigation.services"), root_path(anchor: "services"), class: "text-white" %></li>
+				<li class="list-inline-item">
+          <%= button_tag class: "btn btn-danger text-white dropdown-toggle", data: {toggle: "dropdown"}, aria: {haspopup: true, expanded: true} do %>
+            <%= t("navigation.services") %>
+            <i class="fas fa-angle-down ml-2 mt-1"></i>
+          <% end %>
+          <div class="dropdown-menu">
+            <%= link_to t("navigation.all_services"), root_path(anchor: "services"), class: "dropdown-item" %>
+            <%= link_to t("navigation.seo"), services_digital_discovery_and_seo_path(), class: "dropdown-item" %>
+            <%= link_to t("navigation.web_development"), services_web_design_and_development_path(), class: "dropdown-item" %>
+          </div>
+        </li>
 				<li class="list-inline-item"><%= link_to t("navigation.about"), root_path(anchor: "aboutus"), class: "text-white" %></li>
 				<li class="list-inline-item"><%= link_to t("navigation.work"), root_path(anchor: "ourwork"), class: "text-white" %></li>
 				<li class="list-inline-item"><%= link_to t("navigation.contact"), root_path(anchor: "contact"), class: "text-white" %></li>

@@ -4,15 +4,15 @@
     "show_link": true,
     "link": "services/digital-discovery-and-seo",
     "image": "what_we_do/seo.svg",
-    "title": "Digital Discovery & SEO",
-    "description": "You don't spend much time on the second page of Google, so why should your website? Plain and simply, we help businesses get to the first page on top search engines (Google, Bing, and Yahoo) so that they're seen first. We help establish your presence and a long term content strategy so that you obtain and keep your rank for years to come."
+    "title": "Seach Engine Optimization & Digital Discovery",
+    "description": "You don't spend much time on the second page of Google, so why should your website? Plain and simply, we help businesses get to the first page on top search engines (Google, Bing, and Yahoo) so that they're seen first."
   },
   {
     "columns": "col-lg-6",
     "show_link": true,
     "link": "services/web-design-and-development",
     "image": "what_we_do/code.svg",
-    "title": "Web Design & Development",
+    "title": "Web & Mobile Software Development",
     "description": "Website, mobile apps and beyond. We develop software that suprises and delights across all platforms and devices. Got an idea, just ask us about it -- we love chatting with excited entrepreneurs."
   },
   {
@@ -52,7 +52,7 @@
     "show_link": false,
     "link": "services/engagement-and-retargeting",
     "image": "what_we_do/laptop.svg",
-    "title": "Engaugement & Retargeting",
+    "title": "Engagement & Retargeting",
     "description": "Your best clients are clients who have already bought from you. So, how do you get them to come back? We help design bespoke lead capture and reengaugement campaigns to ensure your customers keep coming back."
   },
   {

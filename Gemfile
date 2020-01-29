@@ -26,7 +26,6 @@ gem 'inline_svg', '~> 1.3', '>= 1.3.1'
 
 gem 'pg'
 gem 'animate-rails'
-gem 'font-awesome-sass', '~> 5.0.9'
 gem 'devise'
 gem 'administrate'
 gem 'local_time', '~> 2.1'

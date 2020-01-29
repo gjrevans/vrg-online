@@ -1,0 +1,24 @@
+$(function() {
+  /* NOTE: All images should be same dimensions */
+  var heroImages = [
+    "<%= asset_pack_url("media/images/backgrounds/local-coffee-shop.jpg") %>",
+    "<%= asset_pack_url("media/images/backgrounds/local-barber.jpg") %>",
+    "<%= asset_pack_url("media/images/backgrounds/local-shop.jpg") %>",
+  ]
+
+  var counter = 0,
+      heroInterval = window.setInterval(updateHeroImage, 3000),
+      $imageSlider = $(".js-hero");
+
+  // Set Initial Image
+  updateHeroImage()
+
+  function resetCounter() {
+    counter = 0;
+  }
+  function updateHeroImage() {
+    if (counter >= heroImages.length) { resetCounter() };
+    $imageSlider.css("background-image", "url(" + heroImages[counter] + ")");
+    counter += 1
+  }
+})

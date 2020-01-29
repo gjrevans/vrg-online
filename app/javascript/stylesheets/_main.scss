@@ -14,7 +14,6 @@ body {
 }
 
 .l-section {
-  overflow: hidden;
   @each $size, $value in $content-spacing {
     &--#{$size} {
       padding: $value 0 ;
@@ -54,17 +53,23 @@ body {
       }
     }
   }
-  &--full {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: calc(100vh - #{$nav-height});
+  &__scroll {
+    @include media-breakpoint-down(md) {
+      display: flex;
+      flex-wrap: nowrap;
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      padding: $spacer 0;
+      &__card {
+        padding-right: 0;
+      }
+      &__spacer {
+        flex: 0 0 1rem;
+      }
+    }
   }
   &--hero {
-    position: relative;
-    transition: background 1s linear;
-    -webkit-transition: background 1s linear;
-    height: 35rem;
+    @include background-to-color("../images/other/hero-illustration.svg", darken($primary, 30%), darken($primary, 30%), 0.8, 0.8);
     background-position: center;
     background-size: cover;
   }

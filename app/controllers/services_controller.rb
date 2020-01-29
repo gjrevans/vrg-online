@@ -1,5 +1,7 @@
 class ServicesController < ApplicationController
   def digital_discovery_and_seo
+    @items = JSON.parse(File.read('public/json/seo_story.json'))
+    @suggestions = JSON.parse(File.read('public/json/seo_suggestions.json'))
   end
 
   def web_design_and_development
@@ -21,5 +23,9 @@ class ServicesController < ApplicationController
   end
 
   def loyalty_programs
+  end
+
+  def frequently_asked_questions
+    @items = JSON.parse(File.read('public/json/seo_story.json'))
   end
 end

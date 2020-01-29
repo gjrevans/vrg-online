@@ -7,10 +7,12 @@ default: &default
 development:
   <<: *default
   database: vrg_online_development
+  host: localhost
 
 test:
   <<: *default
   database: vrg_online_test
+  host: localhost
 
 production:
   <<: *default

@@ -1,47 +1,14 @@
-<header class="l-section l-section--primary l-section--xxl d-flex justify-content-center align-items-center animated fadeIn">
+<header class="l-section l-section--primary l-section--xxl l-section--hero">
   <div class="container">
-		<div class="row">
-			<div class="col-md-5">
-				<h1 class="text-white font-weight-bold"><%= t("pages.index.page_title") %></h1>
-        <p class="text-white-muted"><%= t("pages.index.page_description") %></p>
+		<div class="row d-flex align-items-center justify-content-center text-center">
+			<div class="col-md-9">
+				<h1 class="text-white"><%= t("pages.index.page_title") %></h1>
+        <p><%= t("pages.index.page_description") %></p>
         <%= link_to "Lets Work Together", "#contact", class: "btn btn-info px-5" %>
 			</div>
-      <div class="col-md-7">
-        <%= image_pack_tag("other/hero-illustration.svg", class: "w-100") %>
-      </div>
 		</div>
   </div>
 </header>
-
-<% content_for :javascript do %>
-  <script type='text/javascript'>
-    $(function() {
-      /* NOTE: All images should be same dimensions */
-      var heroImages = [
-        "<%= asset_pack_url("media/images/backgrounds/local-coffee-shop.jpg") %>",
-        "<%= asset_pack_url("media/images/backgrounds/local-barber.jpg") %>",
-        "<%= asset_pack_url("media/images/backgrounds/local-shop.jpg") %>",
-      ]
-
-      var counter = 0,
-          heroInterval = window.setInterval(updateHeroImage, 3000),
-          $imageSlider = $(".js-hero");
-
-      // Set Initial Image
-      updateHeroImage()
-
-      function resetCounter() {
-        counter = 0;
-      }
-      function updateHeroImage() {
-        if (counter >= heroImages.length) { resetCounter() };
-        $imageSlider.css("background-image", "url(" + heroImages[counter] + ")");
-        counter += 1
-      }
-    })
-  </script>
-<% end %>
-
 <section class="l-section l-section--white l-section--lg" id="services">
 	<div class="container">
     <div class="row text-center">
@@ -63,8 +30,10 @@
         </div>
       <% end %>
 		</div>
-    <div class="text-center text-darken">
-      <p>Looking for something you don't see? <%= mail_to "hello@vrginteractive.com", "Just ask us.", class: "text-primary" %> We're here to help.</p>
+    <div class="row justify-content-center text-center text-muted">
+      <div class="col-md-6">
+        <p><%= t("pages.index.cta_1", email: link_to(t("pages.index.contact_us"),"#contact")).html_safe %></p>
+      </div>
     </div>
 	</div>
 </section>
@@ -150,24 +119,4 @@
 	</div>
 </section>
 
-<section class="l-section l-section--primary l-section--xxl" id="contact">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-6">
-				<div class="m-contact">
-					<div class="m-contact__title">
-						<h1 class="mb-3">Don't be shy,<br />Talk to us.</h1>
-						<h4 class="text-darken">We reply to everyone right away. See for yourself.</h4>
-					</div>
-				</div>
-
-				<div class="m-contact__content">
-					<div class="m-contact__email">
-						<small class="text-darken mb-1 font-weight-bold">SAY HI</small>
-						<h3><%= mail_to "hello@vrginteractive.com", "hello@vrginteractive.com", class: "text-white" %></h3>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
+<%= render partial: "layouts/contact" %>

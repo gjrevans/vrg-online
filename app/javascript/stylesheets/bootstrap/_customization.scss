@@ -6,3 +6,15 @@ $content-spacing: (
   xl: 6rem,
   xxl: 12rem
 ) !default;
+
+.navbar {
+  .navbar-brand {
+    svg,
+    img {
+      height: $logo-height;
+    }
+  }
+  .navbar-toggler {
+    border: none;
+  }
+}

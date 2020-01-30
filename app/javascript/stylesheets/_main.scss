@@ -1,8 +1,5 @@
 /* #Globals
 ================================================== */
-$logo-height: 2rem;
-$nav-height: $logo-height + (2 * $spacer);
-
 body {
   background: $primary;
 }
@@ -96,29 +93,6 @@ body {
 
 /* #Modules
 ================================================== */
-.m-navigation {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  @include media-breakpoint-down(sm) {
-    justify-content: center;
-  }
-  &__logo {
-    height: $logo-height;
-  }
-  ul {
-    list-style: none;
-    margin-bottom: 0;
-    li {
-      display: inline-block;
-      &:not(:last-child) {
-        margin-right: 1rem;
-      }
-    }
-  }
-}
-
 .m-whatwedo {
   &__item {
     padding: $spacer * 3 0;

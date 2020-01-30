@@ -5,6 +5,8 @@ class ServicesController < ApplicationController
   end
 
   def web_design_and_development
+    @projects = Project.all.order(created_at: :desc)
+    @items = JSON.parse(File.read('public/json/development_story.json'))
   end
 
   def branding_and_design

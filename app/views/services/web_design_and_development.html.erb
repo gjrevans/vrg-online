@@ -1,9 +1,46 @@
-<div class="l-section l-section--lg l-section--white">
+<% content_for(:title) { t("services.digital_discovery.page_title") } %>
+<% content_for(:description) { t("services.digital_discovery.page_description") } %>
+<header class="l-section l-section--info l-section--xl">
+  <div class="container">
+		<div class="row d-flex justify-content-center align-items-center text-center">
+      <div class="col-md-6">
+        <%= image_pack_tag("what_we_do/development.svg", class: "w-75 mb-3 mb-sm-0") %>
+      </div>
+      <div class="col-md-6 text-sm-left">
+        <h1 class="text-white"><%= t("services.development.page_title") %></h1>
+        <p class="text-white-muted"><%= t("services.development.page_description") %></p>
+        <%= link_to "Lets Work Together", "#contact", class: "btn btn-warning px-5" %>
+      </div>
+		</div>
+  </div>
+</header>
+<section class="l-section l-section--lg l-section--white">
   <div class="container">
     <div class="row">
-      <div class="col-md-12">
-        <h1>Hello World</h1>
+      <div class="col-md-8">
+        <% @items.each_with_index do |item, index| %>
+          <div class="pb-5">
+            <h4 class="d-flex align-items-center mb-3">
+              <div class="mr-2">
+                <div class="d-flex align-items-center justify-content-center bg-primary rounded p-2">
+                  <i class="<%= item["icon"] %> fa-fw text-white"></i>
+                </div>
+              </div>
+              <%= t(item["title"]) %>
+            </h4>
+            <p class="text-medium"><%= t(item["body"]).html_safe %></p>
+          </div>
+        <% end %>
+      </div>
+      <div class="col-md-4 position-relative">
+        <div class="text-center border rounded p-3 sticky-sidebar">
+          <div class="lead mb-3"><%= t("services.development.call_to_action")%></div>
+          <%= link_to "Lets Work Together", "#contact", class: "btn btn-warning px-5" %>
+        </div>
       </div>
     </div>
   </div>
-</div>
+</section>
+
+<%= render partial: "layouts/projects", locals: { color: "light", size: "md" } %>
+<%= render partial: "layouts/contact" %>

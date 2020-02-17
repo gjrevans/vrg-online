@@ -1,0 +1,12 @@
+[
+  {
+    "icon": "fad fa-window",
+    "title": "services.development.section_1.title",
+    "body": "services.development.section_1.body"
+  },
+  {
+    "icon": "fad fa-sack-dollar",
+    "title": "services.development.section_2.title",
+    "body": "services.development.section_2.body"
+  }
+]

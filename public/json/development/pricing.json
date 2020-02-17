@@ -1,0 +1,62 @@
+[
+  {
+    "icon": "fad fa-clipboard-list-check",
+    "title": "Basic Website",
+    "body": "Create a digital face for your business and help customers find you online.",
+    "amount": "$999.99",
+    "pricing_items": [
+      {
+        "title": "Website",
+        "items": ["Unique Pages <strong>(3)</strong>"]
+      },
+      {
+        "title": "Deployment",
+        "items": ["Custom Domain", "Hosted Website", "Server Management"]
+      }
+    ]
+  },
+  {
+    "icon": "fad fa-clipboard-list-check",
+    "title": "Advanced Website",
+    "body": "Help your customer find you online, get in touch & learn more about your products & services.",
+    "amount": "$1499.99",
+    "pricing_items": [
+      {
+        "title": "Website",
+        "items": ["Unique Pages <strong>(5)</strong>"]
+      },
+      {
+        "title": "Functionality",
+        "items": ["Contact Form", "Email Alerts", "Blog & CMS"]
+      },
+      {
+        "title": "Deployment",
+        "items": ["Custom Domain", "Hosted Website", "Server Management"]
+      }
+    ]
+  },
+  {
+    "icon": "fad fa-clipboard-list-check",
+    "title": "Ecommerce Website",
+    "body": "Create a digital version of your store-front & sell your products & services online",
+    "amount": "$2499.99",
+    "pricing_items": [
+      {
+        "title": "Website",
+        "items": ["Unique Pages <strong>(5)</strong>", "Product Pages"]
+      },
+      {
+        "title": "Functionality",
+        "items": ["Product Pages", "Product Categoires", "Checkout & Payments", "Contact Form", "Email Alerts", "Blog & CMS"]
+      },
+      {
+        "title": "Product Import",
+        "items": ["Products Imported <strong>(50)</strong>", "Images Sourced", "Descriptions", "Meta Tags & Descriptions"]
+      },
+      {
+        "title": "Deployment",
+        "items": ["Custom Domain", "Hosted Website", "Server Management"]
+      }
+    ]
+  }
+]

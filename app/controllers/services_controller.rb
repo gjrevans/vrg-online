@@ -1,12 +1,14 @@
 class ServicesController < ApplicationController
   def digital_discovery_and_seo
-    @items = JSON.parse(File.read('public/json/seo_story.json'))
-    @suggestions = JSON.parse(File.read('public/json/seo_suggestions.json'))
+    @items = JSON.parse(File.read('public/json/seo/story.json'))
+    @suggestions = JSON.parse(File.read('public/json/seo/suggestions.json'))
+    @pricing = JSON.parse(File.read('public/json/seo/pricing.json'))
   end
 
   def web_design_and_development
     @projects = Project.all.order(created_at: :desc)
-    @items = JSON.parse(File.read('public/json/development_story.json'))
+    @items = JSON.parse(File.read('public/json/development/story.json'))
+    @pricing = JSON.parse(File.read('public/json/development/pricing.json'))
   end
 
   def branding_and_design

@@ -1,0 +1,73 @@
+[
+  {
+    "icon": "fad fa-binoculars",
+    "title": "Discovery",
+    "body": "Suitable for small businesses and newly formed startups.",
+    "amount": "$399.99",
+    "cadence": "MTH",
+    "pricing_items": [
+      {
+        "title": "Campaign Setup",
+        "items": ["SEO Roadmap", "100+ Point Site Audit"]
+      },
+      {
+        "title": "On-Site SEO",
+        "items": ["Blog Creation", "Page Keyword Optimization <strong>(3)</strong>"]
+      },
+      {
+        "title": "Monthly Deliverables",
+        "items": ["SEO Progess Report", "Keyword Rank Report", "Article Writing <strong>(1)</strong>"]
+      }
+    ]
+  },
+  {
+    "icon": "fad fa-bullseye-arrow",
+    "title": "Recognition",
+    "body": "Suitable for medium size organizations looking to scale online presence.",
+    "amount": "$699.99",
+    "cadence": "MTH",
+    "pricing_items": [
+      {
+        "title": "Campaign Setup",
+        "items": ["SEO Roadmap", "100+ Point Site Audit", "Business Analysis", "Competitor Analysis", "Keyword Report"]
+      },
+      {
+        "title": "On-Site SEO",
+        "items": ["Blog Creation", "Page Keyword Optimization <strong>(5)</strong>", "Meta Tag Optimization", "Title Tag Optimization", "Competitor Analysis & Report"]
+      },
+      {
+        "title": "Off-Site SEO",
+        "items": ["Social Bookmarking", "Slide Share Marketing", "Forums/FAQ’s", "Link Building", "Directory Submission", "Local Business Listings"]
+      },
+      {
+        "title": "Monthly Deliverables",
+        "items": ["SEO Progess Report", "Keyword Rank Report", "Article Writing <strong>(3)</strong>", "Redirect Corrections", "Duplicate Content Corrections"]
+      }
+    ]
+  },
+  {
+    "icon": "fad fa-medal",
+    "title": "Distinguish",
+    "body": "For established enterprises looking to maintain their presence and claim the first slot crown.",
+    "amount": "$999.99",
+    "cadence": "MTH",
+    "pricing_items": [
+      {
+        "title": "Campaign Setup",
+        "items": ["SEO Roadmap", "100+ Point Site Audit", "Business Analysis", "Consumer Analysis", "Competitor Analysis", "Keyword Report"]
+      },
+      {
+        "title": "On-Site SEO",
+        "items": ["Blog Creation", "Page Keyword Optimization <strong>(10)</strong>", "Meta Tag Optimization", "Title Tag Optimization", "Competitor Analysis & Report"]
+      },
+      {
+        "title": "Off Site SEO",
+        "items": ["Social Bookmarking", "Slide Share Marketing", "Forums/FAQ’s", "Link Building", "Directory Submission", "Local Business Listings"]
+      },
+      {
+        "title": "Monthly Deliverables",
+        "items": ["SEO Progess Report", "Keyword Rank Report", "Article Writing <strong>(5)</strong>", "Redirect Corrections", "Duplicate Content Corrections"]
+      }
+    ]
+  }
+]

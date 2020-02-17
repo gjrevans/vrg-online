@@ -11,6 +11,9 @@ Rails.application.routes.draw do
   resources :projects, only: %i[index show], param: :slug
   resource :sitemap, only: :show
 
+  # Pages
+  get "/about-us", to: "pages#about_us"
+
   # Services
   get "/services/digital-discovery-and-seo", to: "services#digital_discovery_and_seo"
   get "/services/web-design-and-development", to: "services#web_design_and_development"

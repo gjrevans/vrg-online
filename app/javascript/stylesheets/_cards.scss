@@ -13,4 +13,22 @@
       color: $primary;
     }
   }
+  &-body {
+    &--pricing {
+      &-head {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 12rem;
+      }
+      &-body {
+        overflow: scroll;
+        height: 20rem;
+      }
+      &-footer {
+        height: 4rem;
+      }
+    }
+  }
 }

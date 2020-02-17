@@ -40,7 +40,7 @@ $pink:    #e53b51 !default;
 $red:     #dc3545 !default;
 $orange:  #fd7e14 !default;
 $yellow:  #ffe269 !default;
-$green:   #28a745 !default;
+$green:   #93c01f !default;
 $teal:    #20c997 !default;
 $cyan:    #5fcece !default;
 
@@ -932,4 +932,4 @@ $print-body-min-width:              map-get($grid-breakpoints, "lg") !default;
 
 // Custom variables
 $logo-height: 2rem;
-$nav-height: $logo-height + (2 * $navbar-padding-y);
+$nav-height: $logo-height + (2 * $navbar-padding-y) + (2 * $navbar-brand-padding-y);

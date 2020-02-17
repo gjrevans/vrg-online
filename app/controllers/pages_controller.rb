@@ -3,4 +3,7 @@ class PagesController < ApplicationController
     @projects = Project.all.order(created_at: :desc)
     @services = JSON.parse(File.read('public/json/services.json'))
   end
+
+  def about_us
+  end
 end

@@ -35,13 +35,14 @@
       <div class="col-md-4 position-relative">
         <div class="text-center border rounded p-3 sticky-sidebar">
           <div class="lead mb-3"><%= t("services.digital_discovery.call_to_action_1")%></div>
-          <%= link_to "Lets Work Together", "#contact", class: "btn btn-warning px-5" %>
+          <%= link_to t("general.contact_us"), "#contact", class: "btn btn-warning px-5" %>
         </div>
       </div>
     </div>
-
   </div>
 </section>
+
+<%= render partial: "layouts/pricing" %>
 
 <section class="l-section l-section--lg l-section--light">
   <div class="container">
@@ -58,7 +59,7 @@
                 <div class="d-flex align-items-center justify-content-between">
                   <div class="d-flex align-items-center">
                     <div class="mr-3">
-                      <i class="fa-fw text-warning <%= suggestion["icon"] %>"></i>
+                      <i class="fa-fw text-success <%= suggestion["icon"] %>"></i>
                     </div>
                     <%= t(suggestion["title"]) %>
                   </div>

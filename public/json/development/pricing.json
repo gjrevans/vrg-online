@@ -1,6 +1,6 @@
 [
   {
-    "icon": "fad fa-clipboard-list-check",
+    "icon": "fad fa-browser",
     "title": "Basic Website",
     "body": "Create a digital face for your business and help customers find you online.",
     "amount": "$999.99",
@@ -16,7 +16,7 @@
     ]
   },
   {
-    "icon": "fad fa-clipboard-list-check",
+    "icon": "fad fa-sitemap",
     "title": "Advanced Website",
     "body": "Help your customer find you online, get in touch & learn more about your products & services.",
     "amount": "$1499.99",
@@ -36,7 +36,7 @@
     ]
   },
   {
-    "icon": "fad fa-clipboard-list-check",
+    "icon": "fad fa-hand-holding-usd",
     "title": "Ecommerce Website",
     "body": "Create a digital version of your store-front & sell your products & services online",
     "amount": "$2499.99",

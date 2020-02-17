@@ -7,7 +7,7 @@
             <div class="card-body card-body--pricing-head">
               <i class="fa-fw fa-2x mb-2 text-primary <%= price["icon"] %>"></i>
               <h4><%= price["title"] %></h4>
-              <span><%= price["body"] %></span>
+              <span class="small text-muted"><%= price["body"] %></span>
             </div>
             <div class="card-body card-body--pricing-body border-top text-left">
               <% price["pricing_items"].each do |pricing_item| %>

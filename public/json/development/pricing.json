@@ -3,11 +3,11 @@
     "icon": "fad fa-browser",
     "title": "Basic Website",
     "body": "Create a digital face for your business and help customers find you online.",
-    "amount": "$999.99",
+    "amount": "$999.99 CAD",
     "pricing_items": [
       {
         "title": "Website",
-        "items": ["Unique Pages <strong>(3)</strong>"]
+        "items": ["Keyword Optimized Pages <strong>(3)</strong>"]
       },
       {
         "title": "Deployment",
@@ -19,11 +19,11 @@
     "icon": "fad fa-sitemap",
     "title": "Advanced Website",
     "body": "Help your customer find you online, get in touch & learn more about your products & services.",
-    "amount": "$1499.99",
+    "amount": "$1,499.99 CAD",
     "pricing_items": [
       {
         "title": "Website",
-        "items": ["Unique Pages <strong>(5)</strong>"]
+        "items": ["Keyword Optimized Pages <strong>(5)</strong>", "Additional Pages <strong>$200.00 / page</strong>"]
       },
       {
         "title": "Functionality",
@@ -39,11 +39,11 @@
     "icon": "fad fa-hand-holding-usd",
     "title": "Ecommerce Website",
     "body": "Create a digital version of your store-front & sell your products & services online",
-    "amount": "$2499.99",
+    "amount": "$2,999.99 CAD",
     "pricing_items": [
       {
         "title": "Website",
-        "items": ["Unique Pages <strong>(5)</strong>", "Product Pages"]
+        "items": ["Keyword Optimized Pages <strong>(3)</strong>", "Additional Pages <strong>$200.00 / page</strong>", "Product Pages"]
       },
       {
         "title": "Functionality",
@@ -51,7 +51,7 @@
       },
       {
         "title": "Product Import",
-        "items": ["Products Imported <strong>(50)</strong>", "Images Sourced", "Descriptions", "Meta Tags & Descriptions"]
+        "items": ["Products Imported <strong>(10)</strong>", "Images Sourced", "Descriptions", "Meta Tags & Descriptions"]
       },
       {
         "title": "Deployment",

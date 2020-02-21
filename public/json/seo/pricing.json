@@ -3,7 +3,7 @@
     "icon": "fad fa-binoculars",
     "title": "Discovery",
     "body": "Suitable for small businesses and newly formed startups.",
-    "amount": "$399.99",
+    "amount": "$399.99 CAD",
     "cadence": "MTH",
     "pricing_items": [
       {
@@ -12,7 +12,7 @@
       },
       {
         "title": "On-Site SEO",
-        "items": ["Blog Creation", "Page Keyword Optimization <strong>(3)</strong>"]
+        "items": ["Blog Creation", "Page Keyword Optimization <strong>(3)</strong>", "Meta Tag Optimization", "Title Tag Optimization"]
       },
       {
         "title": "Monthly Deliverables",
@@ -24,7 +24,7 @@
     "icon": "fad fa-bullseye-arrow",
     "title": "Recognition",
     "body": "Suitable for medium size organizations looking to scale online presence.",
-    "amount": "$699.99",
+    "amount": "$699.99 CAD",
     "cadence": "MTH",
     "pricing_items": [
       {
@@ -49,7 +49,7 @@
     "icon": "fad fa-medal",
     "title": "Distinguish",
     "body": "For established enterprises looking to maintain their presence and claim the first slot crown.",
-    "amount": "$999.99",
+    "amount": "$999.99 CAD",
     "cadence": "MTH",
     "pricing_items": [
       {

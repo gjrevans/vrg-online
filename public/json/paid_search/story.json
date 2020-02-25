@@ -1,0 +1,22 @@
+[
+  {
+    "icon": "fad fa-ad",
+    "title": "services.paid_search.section_1.title",
+    "body": "services.paid_search.section_1.body"
+  },
+  {
+    "icon": "fad fa-bullseye-pointer",
+    "title": "services.paid_search.section_2.title",
+    "body": "services.paid_search.section_2.body"
+  },
+  {
+    "icon": "fad fa-search-dollar",
+    "title": "services.paid_search.section_3.title",
+    "body": "services.paid_search.section_3.body"
+  },
+  {
+    "icon": "fad fa-handshake-alt",
+    "title": "services.paid_search.section_4.title",
+    "body": "services.paid_search.section_4.body"
+  }
+]

@@ -1,0 +1,32 @@
+[
+  {
+    "icon": "fad fa-clipboard-list-check",
+    "title": "services.digital_discovery.suggestion_2.title",
+    "body": "services.digital_discovery.suggestion_2.body"
+  },
+  {
+    "icon": "fad fa-bug",
+    "title": "services.digital_discovery.suggestion_3.title",
+    "body": "services.digital_discovery.suggestion_3.body"
+  },
+  {
+    "icon": "fad fa-photo-video",
+    "title": "services.digital_discovery.suggestion_4.title",
+    "body": "services.digital_discovery.suggestion_4.body"
+  },
+  {
+    "icon": "fad fa-link",
+    "title": "services.digital_discovery.suggestion_1.title",
+    "body": "services.digital_discovery.suggestion_1.body"
+  },
+  {
+    "icon": "fad fa-folder-tree",
+    "title": "services.digital_discovery.suggestion_5.title",
+    "body": "services.digital_discovery.suggestion_5.body"
+  },
+  {
+    "icon": "fad fa-tools",
+    "title": "services.digital_discovery.suggestion_6.title",
+    "body": "services.digital_discovery.suggestion_6.body"
+  }
+]

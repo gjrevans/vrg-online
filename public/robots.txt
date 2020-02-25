@@ -1,5 +1,6 @@
 User-agent: *
 Allow: /
 Disallow: /users
+Disallow: /admin
 
 Sitemap: https://vrginteractive.ca/sitemap.xml

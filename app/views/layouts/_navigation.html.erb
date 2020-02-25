@@ -23,6 +23,10 @@
               <i class="fad fa-globe-americas mr-2 text-primary"></i>
               <%= t("navigation.seo") %>
             <% end %>
+            <%= link_to services_paid_search_path, class: "dropdown-item" do %>
+              <i class="fad fa-ad mr-2 text-primary"></i>
+              <%= t("navigation.paid_search") %>
+            <% end %>
             <%= link_to services_web_design_and_development_path, class: "dropdown-item" do %>
               <i class="fad fa-computer-classic mr-2 text-primary"></i>
               <%= t("navigation.development") %>

@@ -1,9 +1,47 @@
-<div class="l-section l-section--lg l-section--white">
+<% content_for(:title) { t("services.paid_search.page_title") } %>
+<% content_for(:description) { t("services.paid_search.page_description") } %>
+<header class="l-section l-section--secondary l-section--lg">
+  <div class="container">
+		<div class="row d-flex justify-content-center align-items-center">
+      <div class="col-md-6 text-center">
+        <%= image_pack_tag("what_we_do/paid-search.svg", class: "w-75 mb-5 mb-sm-0") %>
+      </div>
+      <div class="col-md-6 text-center text-sm-left">
+        <h1 class="text-white"><%= t("services.paid_search.page_title") %></h1>
+        <p class="text-white-muted"><%= t("services.paid_search.page_description") %></p>
+        <%= link_to "Lets Work Together", "#contact", class: "btn btn-warning px-5" %>
+      </div>
+		</div>
+  </div>
+</header>
+<section class="l-section l-section--lg l-section--white">
   <div class="container">
     <div class="row">
-      <div class="col-md-12">
-        <h1>Hello World</h1>
+      <div class="col-md-8">
+        <% @items.each_with_index do |item, index| %>
+          <div class="pb-5">
+            <h4 class="d-flex align-items-center mb-3">
+              <div class="mr-2">
+                <div class="d-flex align-items-center justify-content-center bg-primary rounded p-2">
+                  <i class="<%= item["icon"] %> fa-fw text-white"></i>
+                </div>
+              </div>
+              <%= t(item["title"]) %>
+            </h4>
+            <p class="text-medium"><%= t(item["body"]).html_safe %></p>
+          </div>
+        <% end %>
+      </div>
+      <div class="col-md-4 position-relative">
+        <div class="text-center border rounded p-3 sticky-sidebar">
+          <div class="lead mb-3"><%= t("services.paid_search.call_to_action")%></div>
+          <%= link_to t("general.contact_us"), "#contact", class: "btn btn-warning px-5" %>
+        </div>
       </div>
     </div>
   </div>
-</div>
+</section>
+
+<%= render partial: "layouts/pricing" %>
+<%= render partial: "layouts/projects", locals: { color: "light", size: "md" } %>
+<%= render partial: "layouts/contact" %>

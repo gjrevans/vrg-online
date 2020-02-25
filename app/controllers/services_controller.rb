@@ -18,6 +18,10 @@ class ServicesController < ApplicationController
   end
 
   def paid_search
+    @projects = Project.all.order(created_at: :desc)
+    @items = JSON.parse(File.read('public/json/paid_search/story.json'))
+    @suggestions = JSON.parse(File.read('public/json/seo/suggestions.json'))
+    @pricing = JSON.parse(File.read('public/json/paid_search/pricing.json'))
   end
 
   def conversion_optimization

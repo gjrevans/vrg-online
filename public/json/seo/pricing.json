@@ -3,7 +3,7 @@
     "icon": "fad fa-binoculars",
     "title": "Discovery",
     "body": "Suitable for small businesses and newly formed startups.",
-    "amount": "$499.99 CAD",
+    "amount": "$399.99 CAD",
     "cadence": "MTH",
     "pricing_items": [
       {
@@ -12,11 +12,11 @@
       },
       {
         "title": "On-Site SEO",
-        "items": ["Blog Creation", "Page Keyword Optimization <strong>(3)</strong>", "Meta Tag Optimization", "Title Tag Optimization"]
+        "items": ["Blog Creation", "Page Keyword Optimization <strong>(3 - 5)</strong>", "Meta Tag Optimization", "Title Tag Optimization"]
       },
       {
         "title": "Monthly Deliverables",
-        "items": ["SEO Progess Report", "Keyword Rank Report", "Article Writing <strong>(1)</strong>"]
+        "items": ["SEO Progess Report", "Keyword Rank Report", "Article Research & Writing <strong>(1)</strong>"]
       }
     ]
   },
@@ -24,7 +24,7 @@
     "icon": "fad fa-bullseye-arrow",
     "title": "Recognition",
     "body": "Suitable for medium size organizations looking to scale online presence.",
-    "amount": "$699.99 CAD",
+    "amount": "$799.99 CAD",
     "cadence": "MTH",
     "pricing_items": [
       {
@@ -33,7 +33,7 @@
       },
       {
         "title": "On-Site SEO",
-        "items": ["Blog Creation", "Page Keyword Optimization <strong>(5)</strong>", "Meta Tag Optimization", "Title Tag Optimization", "Competitor Analysis & Report"]
+        "items": ["Blog Creation", "Page Keyword Optimization <strong>(5 - 10)</strong>", "Meta Tag Optimization", "Title Tag Optimization", "Competitor Analysis & Report"]
       },
       {
         "title": "Off-Site SEO",
@@ -41,7 +41,7 @@
       },
       {
         "title": "Monthly Deliverables",
-        "items": ["SEO Progess Report", "Keyword Rank Report", "Article Writing <strong>(3)</strong>", "Redirect Corrections", "Duplicate Content Corrections"]
+        "items": ["SEO Progess Report", "Keyword Rank Report", "Article Research & Writing <strong>(3)</strong>", "Redirect Corrections", "Duplicate Content Corrections"]
       }
     ]
   },
@@ -49,7 +49,7 @@
     "icon": "fad fa-medal",
     "title": "Distinguish",
     "body": "For established enterprises looking to maintain their presence and claim the first slot crown.",
-    "amount": "$999.99 CAD",
+    "amount": "$1499.99 CAD",
     "cadence": "MTH",
     "pricing_items": [
       {
@@ -58,7 +58,7 @@
       },
       {
         "title": "On-Site SEO",
-        "items": ["Blog Creation", "Page Keyword Optimization <strong>(10)</strong>", "Meta Tag Optimization", "Title Tag Optimization", "Competitor Analysis & Report"]
+        "items": ["Blog Creation", "Page Keyword Optimization <strong>(10 - 20)</strong>", "Meta Tag Optimization", "Title Tag Optimization", "Competitor Analysis & Report"]
       },
       {
         "title": "Off Site SEO",
@@ -66,7 +66,7 @@
       },
       {
         "title": "Monthly Deliverables",
-        "items": ["SEO Progess Report", "Keyword Rank Report", "Article Writing <strong>(5)</strong>", "Redirect Corrections", "Duplicate Content Corrections"]
+        "items": ["SEO Progess Report", "Keyword Rank Report", "Article Research & Writing <strong>(4)</strong>", "Redirect Corrections", "Duplicate Content Corrections"]
       }
     ]
   }

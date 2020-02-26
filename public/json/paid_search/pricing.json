@@ -8,7 +8,7 @@
     "pricing_items": [
       {
         "title": "Campaign Setup",
-        "items": ["Active Campaigns <strong>(1-2)</strong>", "Target Locations <strong>(1)</strong>", "Campaign Design", "Ad Design", "Paid Search Strategy", "Competitor Keyword Analysis"]
+        "items": [ "Campaign Design", "Ad Design", "Paid Search Strategy", "Competitor Keyword Analysis", "Active Campaigns <strong>(1)</strong>", "Keyword Groups <strong>(2-3)</strong>", "Ads Per Keyword Group <strong>(2-3)</strong>", "Target Locations <strong>(1)</strong>"]
       },
       {
         "title": "Monthly Deliverables",
@@ -20,12 +20,12 @@
     "icon": "fad fa-ad",
     "title": "Multi-Location",
     "body": "Have more than one store location, no worries. Let us help you manage your digital targeting across multiple geographies.",
-    "amount": "$449.99 CAD",
+    "amount": "$499.99 CAD",
     "cadence": "MTH",
     "pricing_items": [
       {
         "title": "Campaign Setup",
-        "items": ["Active Campaigns <strong>(2-3)</strong>", "Target Locations <strong>(2-3)</strong>", "Campaign Design", "Ad Design", "Paid Search Strategy", "Competitor Keyword Analysis"]
+        "items": [ "Campaign Design", "Ad Design", "Paid Search Strategy", "Competitor Keyword Analysis", "Active Campaigns <strong>(1-2)</strong>", "Keyword Groups <strong>(2-3)</strong>", "Ads Per Keyword Group <strong>(2-3)</strong>", "Target Locations <strong>(2-3)</strong>"]
       },
       {
         "title": "Monthly Deliverables",
@@ -42,7 +42,7 @@
     "pricing_items": [
       {
         "title": "Campaign Setup",
-        "items": ["Active Campaigns <strong>(3-5)</strong>", "Target Locations <strong>(10)</strong>", "Campaign Design", "Ad Design", "Paid Search Strategy", "Competitor Keyword Analysis"]
+        "items": [ "Campaign Design", "Ad Design", "Paid Search Strategy", "Competitor Keyword Analysis", "Active Campaigns <strong>(2-3)</strong>", "Keyword Groups <strong>(2-3)</strong>", "Ads Per Keyword Group <strong>(3-5)</strong>", "Target Locations <strong>(10)</strong>"]
       },
       {
         "title": "Monthly Deliverables",

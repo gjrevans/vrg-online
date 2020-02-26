@@ -28,10 +28,21 @@
 
 <section class="l-section l-section--light l-section--md">
   <div class="container">
-    <div class="card-columns">
-      <% @articles.each do |article| %>
-        <%= render partial: "articles/partials/article", locals: {article: article} %>
-      <% end %>
+    <% if @articles.empty? %>
+    <div class="row">
+      <div class="col-12">
+        <div class="border rounded text-center p-5">
+          <h4><%= t("articles.index.no_articles_title") %></h4>
+          <p class="mb-0"><%= t("articles.index.no_articles_body") %></p>
+        </div>
+      </div>
     </div>
+    <% else %>
+      <div class="card-columns">
+        <% @articles.each do |article| %>
+          <%= render partial: "articles/partials/article", locals: {article: article} %>
+        <% end %>
+      </div>
+    <% end %>
   </div>
 </section>

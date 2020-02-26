@@ -135,5 +135,7 @@ en:
     index:
       page_title: "Resources & Articles"
       page_description: "Helpful web development, design and search engine optimization tips and tricks from our team of experts."
+      no_articles_title: "No Resources Found"
+      no_articles_body: "We just launched out resources section and are hard at work to add new content here. Stay tuned!" 
     show:
       posted_at: "Posted on %{time}"

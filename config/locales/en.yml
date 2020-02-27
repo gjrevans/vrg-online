@@ -56,7 +56,7 @@ en:
     sign_out: "Sign Out"
   pages:
     index:
-      page_title: "Running your business hard enough, but being found online doesn't have to be."
+      page_title: "Running your business is hard enough, but being found online doesn't have to be."
       page_description: "VRG Interactive is a full service creative agency. We work with local business owners to design & develop beautiful, discoverable, high conversion online experiences."
       cta_1: Ready To Chat, %{email}.
       contact_us: "Get In Touch"

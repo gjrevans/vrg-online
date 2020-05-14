@@ -7,17 +7,17 @@
 		</div>
     <div class="row">
       <% @projects.each do |project| %>
-        <div class="col-md-6 col-lg-4">
+        <%= link_to project.external_url, class:"col-md-6 col-lg-4", target: :blank do %>
           <div class="m-ourwork">
             <div class="m-ourwork__image">
               <%= image_tag(project.image_url, class: "img-fluid") %>
               <div class="m-ourwork__image__body">
-                <h5><%= link_to project.title, project_path(project) %></h5>
+                <h5 class="text-primary"><%= project.title %></h5>
                 <p class="mb-0"><%= truncate_description(project.description) %></p>
               </div>
             </div>
           </div>
-        </div>
+        <% end %>
       <% end %>
     </div>
 		<div class="row justify-content-center mt-5 text-center">

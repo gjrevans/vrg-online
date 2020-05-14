@@ -14,6 +14,7 @@ class ProjectDashboard < Administrate::BaseDashboard
     description: Field::Text,
     meta_title: Field::String,
     meta_description: Field::Text,
+    external_url: Field::String,
     image_url: Field::String,
     content: RichTextField,
     created_at: Field::DateTime,
@@ -42,6 +43,7 @@ class ProjectDashboard < Administrate::BaseDashboard
   meta_title
   meta_description
   image_url
+  external_url
   content
   created_at
   updated_at
@@ -57,6 +59,7 @@ class ProjectDashboard < Administrate::BaseDashboard
   meta_title
   meta_description
   image_url
+  external_url
   content
   ].freeze
 

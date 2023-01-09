@@ -22,7 +22,7 @@ gem 'jbuilder', '~> 2.7'
 
 # Use Active Storage variant
 gem 'image_processing', '~> 1.2'
-gem 'inline_svg', '~> 1.3', '>= 1.3.1'
+gem 'inline_svg', '~> 1.7'
 
 gem 'pg'
 gem 'animate-rails'
